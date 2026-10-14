@@ -8,7 +8,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Configuracion principal de Spring Boot -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -16,47 +15,39 @@
         <relativePath/>
     </parent>
 
-    <!-- Informacion del proyecto -->
     <groupId>com.inventory</groupId>
     <artifactId>backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Inventory Management Backend</name>
     <description>REST API for product inventory management</description>
 
-    <!-- Version de Java -->
     <properties>
         <java.version>21</java.version>
     </properties>
 
-    <!-- Dependencias del proyecto -->
     <dependencies>
 
-        <!-- API REST: controladores y peticiones HTTP -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Persistencia: Spring Data JPA y Hibernate -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Controlador de base de datos PostgreSQL -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Validaciones de los datos -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- Pruebas automatizadas -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -65,7 +56,6 @@
 
     </dependencies>
 
-    <!-- Configuracion de compilacion -->
     <build>
         <plugins>
             <plugin>

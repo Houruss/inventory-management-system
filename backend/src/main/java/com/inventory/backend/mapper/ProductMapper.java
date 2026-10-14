@@ -25,4 +25,12 @@ public class ProductMapper {
                 product.getStock(),
                 product.getCategory());
     }
+
+    public void updateEntityFromRequest(ProductRequest request, Product product) {
+        product.setName(request.name());
+        product.setDescription(request.description());
+        product.setPrice(request.price());
+        product.setStock(request.stock());
+        product.setCategory(request.category());
+    }
 }
