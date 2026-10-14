@@ -14,7 +14,7 @@ dist/
 # IDE
 .idea/
 .vscode/
-+.iml
+*.iml
 
 # Logs
 *.log
