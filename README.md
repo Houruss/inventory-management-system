@@ -240,6 +240,25 @@ La API utiliza el prefijo `/api/products`.
 | PUT    | /api/products/{id} | Actualizar producto | 200 OK            |
 | DELETE | /api/products/{id} | Eliminar producto   | 204 No Content    |
 
+## API Documentation (OpenAPI / Swagger)
+
+The backend includes interactive API documentation using Springdoc OpenAPI and Swagger UI.
+
+After starting the application with Docker Compose, access:
+
+- Swagger UI: http://localhost:8080/swagger-ui/index.html
+- OpenAPI JSON: http://localhost:8080/v3/api-docs
+
+Swagger UI allows users to explore and test the following endpoints:
+
+- GET /api/products
+- GET /api/products/{id}
+- POST /api/products
+- PUT /api/products/{id}
+- DELETE /api/products/{id}
+
+The documentation also includes request and response schemas.
+
 ### Ejemplo de creación de producto
 
 Solicitud:
